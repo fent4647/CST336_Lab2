@@ -27,6 +27,7 @@ function generateHand(){
     return $arrayHand;
 }
 function generateTotal($arrayHand){
+    
     return array_sum($arrayHand);
 }
 
