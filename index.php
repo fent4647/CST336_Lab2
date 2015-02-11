@@ -21,7 +21,35 @@
         global $totalHand;
         return $totalHand;
     }
+    
 
+    function findWinner($totalHands) {
+        $max = abs(($totalHands[0] - 42));
+        $loc = 0;
+        for($i = 0; $i < count($totalHands); $i++) {
+            if($max <= abs($totalHands[$i] - 42)) {
+                $max = $totalHands[$i];
+                $loc = $i;
+            }
+        }
+        
+        switch($loc) {
+            case 0:
+                return "Maritza";
+                break;
+            case 1:
+                return "Cesaer";
+                break;
+            case 2:
+                return "Dale";
+                break;
+            case 3:
+                return "Thane";
+                break;
+            default:
+                echo "No Won is a Winner";
+        }
+    }
 ?>
 <DOCTYPE! HTML>
 <html>
@@ -40,13 +68,14 @@
             echo $faceArr[$i]; // display face
             $hand = generateHand(); // generate the players hand
             $sum = generateTotal($hand); // get the total of the hand
-            addToHand($sum);
-            echo $sum . "<br/>";
+            addToHand($sum); // add to the array hand of totals
+            echo "<span>" . $sum . "</span><br/>"; // print the total
         }
-		
 
 	?>
 
+    <p>And the Winner Is : <p>
+    <?= findWinner(getHand()); ?>
 
 	<footer>
 		Created By &copy; Cesaer Galvan, Dale Garcia, Maritza Abzun, Thane Fenton
