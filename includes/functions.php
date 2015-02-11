@@ -17,16 +17,16 @@ function generateHand(){
         if(!in_array($card, $arrayHand)){
             $arrayHand[] = $card;
         }
-    
     }
     // display arrayhand
     foreach($arrayHand as $card){
         $suit = array_rand($arraySuits);
-       echo "<img src='../img/cards/$suit/$card.png'/>";
+        $displaySuit = $arraySuits[$suit];
+       echo "<img src='../img/cards/$displaySuit/$card.png'/>";
     }
     return $arrayHand;
 }
 function generateTotal(){
-    
+    $total = 50;
 }
 ?>
