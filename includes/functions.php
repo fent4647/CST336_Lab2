@@ -22,9 +22,9 @@ function generateHand(){
     // display arrayhand
     foreach($arrayHand as $card){
         $suit = array_rand($arraySuits);
-       echo "<img src='img/cards/$suit/$card.png'/>";
+       echo "<img src='../img/cards/$suit/$card.png'/>";
     }
-    
+    return $arrayHand;
 }
 function generateTotal(){
     
