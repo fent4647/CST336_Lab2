@@ -1,5 +1,5 @@
 /*
-    Document   : labs/CST336_Lab2/CSS/styles．css
+    Document   : labs/CST336_Lab2/css/styles．css
     Created on : 2015-02-11 06:35 PM
     Author     : DWGarcia (AKA Dale)
     Description:This contains all of the styles that will be used in the Lab 2
@@ -7,10 +7,26 @@
     To change this template use Tools | Templates.
 */
 
-root {
-    
-    display: block;
+body{
+     font-family: Verdana, Arial, Times New Roman;
+  
 }
+
+#winner {
+    text-align:center;
+    color:#FF0000;
+    size:8em;
+}
+
+span {
+    size:8em;
+}
+
+footer {
+    margin:64px;
+    text-align:center;
+}
+
 /* Notes: author's notes for references
   #wrapper{
             width: 700px;

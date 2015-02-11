@@ -26,7 +26,8 @@ function generateHand(){
     }
     return $arrayHand;
 }
-function generateTotal(){
+function generateTotal($arrayHand){
     $total = 50;
+    return $total;
 }
 ?>

@@ -55,7 +55,7 @@
 <html>
 <head>
 <title>Lab 2 Team</title>
-<link href="CSS/styles.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper">
@@ -74,11 +74,11 @@
 
 	?>
 
-    <p>And the Winner Is : <p>
-    <?= findWinner(getHand()); ?>
-
+    <br/>
+    <?= "<p id='winner'>And the Winner Is : " . findWinner(getHand()) . "</p>"; ?>
+    <br/>
 	<footer>
-		Created By &copy; Cesaer Galvan, Dale Garcia, Maritza Abzun, Thane Fenton
+		Created By &copy; Cesaer Galvan, Dale Garcia, Maritza Abzun, Thane Fenton.
 	</footer>
 </div>
 </body>
