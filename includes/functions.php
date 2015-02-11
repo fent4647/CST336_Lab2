@@ -22,7 +22,7 @@ function generateHand(){
     // display arrayhand
     foreach($arrayHand as $card){
         $suit = array_rand($arraySuits);
-       echo "<img src='img/cards/".generateRandomSuit()."/$num1.png'/>";
+       echo "<img src='img/cards/$suit/$card.png'/>";
     }
     
 }
