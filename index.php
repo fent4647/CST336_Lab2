@@ -1,3 +1,7 @@
+<?php
+	include(/includes/functions.php);
+
+?>
 <DOCTYPE! HTML>
 <html>
 <head>
@@ -6,7 +10,8 @@
 <body>
 
 <?php
-
+	$hand = generateHand();
+	$total = generateTotal($hand);
 
 ?>
 
