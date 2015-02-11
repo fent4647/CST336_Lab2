@@ -11,7 +11,7 @@ function generateHand(){
     
     $arrayHand = array();
     
-    while(count($arrayHand) < 4){
+    while(count($arrayHand) < 5){
         $card = rand(1,13);
 
         if(!in_array($card, $arrayHand)){
@@ -26,7 +26,8 @@ function generateHand(){
     }
     return $arrayHand;
 }
-function generateTotal(){
-    $total = 50;
+function generateTotal($arrayHand){
+    return array_sum($arrayHand);
 }
+
 ?>
