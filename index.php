@@ -27,8 +27,8 @@
         $max = abs(($totalHands[0] - 42));
         $loc = 0;
         for($i = 0; $i < count($totalHands); $i++) {
-            if($max <= abs($totalHands[$i] - 42)) {
-                $max = $totalHands[$i];
+            if($max >= abs($totalHands[$i] - 42)) {
+                $max = abs($totalHands[$i] - 42);
                 $loc = $i;
             }
         }
