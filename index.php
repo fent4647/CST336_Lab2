@@ -1,6 +1,14 @@
 <?php
 	include ('includes/functions.php');
-
+    
+    function displayFaces() {
+        $faces = array();
+        for($i = 0; $i < 4; $i++) {
+            array_push($faces, "<img src='player_faces/$i.png'/>");
+        }
+        
+        return $faces;
+    }
 ?>
 <DOCTYPE! HTML>
 <html>
@@ -13,7 +21,13 @@
 	<h1 id="title">Silver Jack</h1>
 
 	<?php
-		$hand = generateHand();
+        $faceArr = displayFaces();
+        
+        for($i = 0; $i < 4; $i++) { $hand = generateHand(); }
+		
+
+
+
 		$total = generateTotal($hand);
 
 	?>
