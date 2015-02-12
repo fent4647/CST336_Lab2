@@ -6,26 +6,39 @@
     Purpose of the stylesheet follows.
     To change this template use Tools | Templates.
 */
-/*By otehrs*/
+
+/*Edit span = number totals of each user
+ * 
+ * =======================================================================================================================================================
+ *   NOTE TO TEAM: sugessted: make user images and card images different classes/ID's.
+ *                 I want to add a silver border to user's pics (see index in new tab.) 
+ *                 and custom space both sets of images. 
+ */
+
+/*By others*/
 body{
      font-family: Verdana, Arial, Times New Roman;
   
 }
-
 span {
-    size:8em;
+    size: 8em;
+    text-align: center;
+    background: red;
+    position: relative;
+    top: -50;
+    left: 10;
+    border-radius: 3px;
 }
 
 footer {
     margin:64px;
     text-align:center;
 }
-/*End others*/
+/*End OF others*/
 
 root {
     
     display: block;
-    /*background: orange;*/
     
 }
 body{
@@ -36,38 +49,43 @@ body{
     background: #212142;
     color: silver;
     border-radius: 15px;
+    text-align: center;
     
 }
 #wrapper{
     width: 600px;
     margin: auto;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 7px;
     background: #44a8ff;
 }
 #winner{
-    text-decoration-color: #46931f; /*Request: FF0000*/
+    background: #46931f; /*Requested: FF0000?*/
     text-align: center;
     size: 8em;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    left: 150;
 }
 #button{
     color: black;
     background: #a83fa8;
     padding: 3px;
     border-radius: 2 px;
+    color: yellow;
 }
-.symbolStyle{
+/*Not needed*/
+#symbolStyle{
             font-Size: 6em;
-        }
+}
 img {
-    padding 3px;
-    background: silver opacity;
-    margin: 10px;
+    padding: 5px;
+    background: silver ;
+    margin: 7px;
 }
-div{
-    
-}
-/*#wrapper, div, h1
+
+/*
 /* Notes: author's notes for references
   #wrapper{
             width: 700px;
@@ -75,14 +93,12 @@ div{
             background: green;
             padding: 10px;
             border-radius:15px;
-        }
-        
+        }  
         #mainHeader{
             color: green;
             background: yellow;
             text-align: center;
-        }
-        
+        }       
         .listStyle{
             color: violet;
         }
@@ -90,59 +106,15 @@ div{
             list-style-type:square;
             
         }
-        
         a{
             padding-right: 10px;
         }
-        
-
         img{
             border: black 10px solid;
             border-radius:20px;
             margin-left: 15px;
             float:right;   
-        }
-        
-        body{
-            font-family: Verdana, Arial, Times New Roman;
-            background: #CAFAC3;
-        }
-        */*/
-/* Notes: author's notes for references
-  #wrapper{
-            width: 700px;
-            margin: auto;
-            background: green;
-            padding: 10px;
-            border-radius:15px;
-        }
-        
-        #mainHeader{
-            color: green;
-            background: yellow;
-            text-align: center;
-        }
-        
-        .listStyle{
-            color: violet;
-        }
-        li{
-            list-style-type:square;
-            
-        }
-        
-        a{
-            padding-right: 10px;
-        }
-        
-
-        img{
-            border: black 10px solid;
-            border-radius:20px;
-            margin-left: 15px;
-            float:right;   
-        }
-        
+        }       
         body{
             font-family: Verdana, Arial, Times New Roman;
             background: #CAFAC3;
