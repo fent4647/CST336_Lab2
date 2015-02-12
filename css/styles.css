@@ -6,16 +6,10 @@
     Purpose of the stylesheet follows.
     To change this template use Tools | Templates.
 */
-
+/*By otehrs*/
 body{
      font-family: Verdana, Arial, Times New Roman;
   
-}
-
-#winner {
-    text-align:center;
-    color:#FF0000;
-    size:8em;
 }
 
 span {
@@ -26,7 +20,94 @@ footer {
     margin:64px;
     text-align:center;
 }
+/*End others*/
 
+root {
+    
+    display: block;
+    /*background: orange;*/
+    
+}
+body{
+    background: orange;
+}
+#title{
+    border-width:4px;
+    background: #212142;
+    color: silver;
+    border-radius: 15px;
+    
+}
+#wrapper{
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background: #44a8ff;
+}
+#winner{
+    text-decoration-color: #46931f; /*Request: FF0000*/
+    text-align: center;
+    size: 8em;
+}
+#button{
+    color: black;
+    background: #a83fa8;
+    padding: 3px;
+    border-radius: 2 px;
+}
+.symbolStyle{
+            font-Size: 6em;
+        }
+img {
+    padding 3px;
+    background: silver opacity;
+    margin: 10px;
+}
+div{
+    
+}
+/*#wrapper, div, h1
+/* Notes: author's notes for references
+  #wrapper{
+            width: 700px;
+            margin: auto;
+            background: green;
+            padding: 10px;
+            border-radius:15px;
+        }
+        
+        #mainHeader{
+            color: green;
+            background: yellow;
+            text-align: center;
+        }
+        
+        .listStyle{
+            color: violet;
+        }
+        li{
+            list-style-type:square;
+            
+        }
+        
+        a{
+            padding-right: 10px;
+        }
+        
+
+        img{
+            border: black 10px solid;
+            border-radius:20px;
+            margin-left: 15px;
+            float:right;   
+        }
+        
+        body{
+            font-family: Verdana, Arial, Times New Roman;
+            background: #CAFAC3;
+        }
+        */*/
 /* Notes: author's notes for references
   #wrapper{
             width: 700px;
