@@ -77,6 +77,7 @@
     <br/>
     <?= "<p id='winner'>And the Winner Is : " . findWinner(getHand()) . "</p>"; ?>
     <br/>
+    <button type="button" onClick="window.location.reload()">Refresh</button>
 	<footer>
 		Created By &copy; Cesaer Galvan, Dale Garcia, Maritza Abzun, Thane Fenton.
 	</footer>
